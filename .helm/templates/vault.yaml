@@ -16,6 +16,10 @@ spec:
       containers:
       - image: hashicorp/vault:1.19
         name: vault
+        ports:
+          - 0.0.0.0:8200:8200
         env:
           - name: SKIP_SETCAP
             value: "true"
+          - name: VAULT_ADDR
+            value: "http://0.0.0.0:8200"
