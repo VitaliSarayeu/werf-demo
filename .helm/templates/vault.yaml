@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: vault
   annotations:
-    werf.io/weight: 10
+    werf.io/weight: "10"
 spec:
   selector:
     matchLabels:
