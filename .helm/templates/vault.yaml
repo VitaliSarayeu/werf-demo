@@ -17,7 +17,7 @@ spec:
       - image: hashicorp/vault:1.19
         name: vault
         ports:
-          - 0.0.0.0:8200:8200
+          - containerPort: 8200 
         env:
           - name: SKIP_SETCAP
             value: "true"
