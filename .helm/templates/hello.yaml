@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello
+  annotations:
+    werf.io/weight: 100
 spec:
   selector:
     matchLabels:
