@@ -13,3 +13,4 @@ spec:
     spec:
       containers:
       - image: nginxdemos/hello:plain-text
+        name: demonginx
