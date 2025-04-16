@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: waitforme
   annotations:
-    werf.io/deploy-dependency-migrations: state=ready,kind=Deployment,name=vault
+    werf.io/deploy-dependency-vaultup: state=ready,kind=Deployment,name=vault
 spec:
   template:
     spec:

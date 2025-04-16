@@ -4,7 +4,7 @@ metadata:
   name: hello
   annotations:
     werf.io/weight: "100"
-    werf.io/deploy-dependency-migrations: state=completed,kind=Job,name=waitforme
+    werf.io/deploy-dependency-vaultprovisioning: state=completed,kind=Job,name=waitforme
 spec:
   selector:
     matchLabels:
