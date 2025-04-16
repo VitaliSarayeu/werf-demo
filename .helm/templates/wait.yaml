@@ -10,7 +10,7 @@ spec:
       containers:
       - name: provision
         image: ubuntu:latest
-        command: ["sleep",  "10"]
+        command: ["sleep",  "3"]
       restartPolicy: Never
   backoffLimit: 4
 
