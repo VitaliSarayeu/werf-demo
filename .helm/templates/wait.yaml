@@ -1,0 +1,15 @@
+iapiVersion: batch/v1
+kind: Job
+metadata:
+  name: waitforme
+  werf.io/deploy-dependency-migrations: state=ready,kind=Deployment,name=vault
+spec:
+  template:
+    spec:
+      containers:
+      - name: provision
+        image: ubuntu:latest
+        command: ["sleep",  "10"]
+      restartPolicy: Never
+  backoffLimit: 4
+
