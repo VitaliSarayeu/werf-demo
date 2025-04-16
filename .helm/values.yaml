@@ -1,3 +1,4 @@
 imageTags:
   vault: "hashicorp/vault:1.19"
-  web: "nginxdemos/hello:plain-text"
+  # web: "nginxdemos/hello:0.3-plain-text"
+  web: "nginxdemos/hello:0.4-plain-text"
