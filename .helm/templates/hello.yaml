@@ -14,5 +14,5 @@ spec:
         app: hello
     spec:
       containers:
-      - image: nginxdemos/hello:plain-text
+      - image: {{ $.Values.imageTags.nginx }}
         name: demonginx
