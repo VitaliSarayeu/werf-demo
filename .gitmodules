@@ -1,0 +1,6 @@
+[submodule "werf-demo-one"]
+	path = werf-demo-one
+	url = git@github.com:VitaliSarayeu/werf-demo-one.git
+[submodule "werf-demo-two"]
+	path = werf-demo-two
+	url = git@github.com:VitaliSarayeu/werf-demo-two.git
