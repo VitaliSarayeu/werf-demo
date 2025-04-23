@@ -2,12 +2,12 @@ project: demoapp
 configVersion: 1
 
 ---
-image: vitalysaraevcoherent/werf-demo-one
+image: registry-1.docker.io/vitalysaraevcoherent/werf-demo-one
 dockerfile: Dockerfile
 context: "werf-demo-one"
 staged: true
 ---
-image: vitalysaraevcoherent/werf-demo-two
+image: registry-1.docker.io/vitalysaraevcoherent/werf-demo-two
 dockerfile: Dockerfile
 context: "werf-demo-two"
 staged: true
