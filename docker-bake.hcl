@@ -6,23 +6,35 @@ target "one" {
   cache-from = [
     {
       type = "registry",
-      ref = "vitalysaraevcoherent/mvn-build-cache:latest"
+      ref = "vitalysaraevcoherent/mvn-build-cache:app-one"
     }
   ]
-  dockerfile = "werf-demo-one/Dockerfile"
+  cache-to = [
+    {
+      type = "registry",
+      ref = "vitalysaraevcoherent/mvn-build-cache:app-one"
+    }
+  ]
+
   tags = ["vitalysaraevcoherent/werf-demo-one"]
   context = "werf-demo-one"
 }
 
 target "two" {
-  dockerfile = "werf-demo-two/Dockerfile"
   tags = ["vitalysaraevcoherent/werf-demo-two"]
   context = "werf-demo-two"
   cache-from = [
     {
       type = "registry",
-      ref = "vitalysaraevcoherent/mvn-build-cache:latest"
+      ref = "vitalysaraevcoherent/mvn-build-cache:app-two"
     }
   ]
+  cache-to = [
+    {
+      type = "registry",
+      ref = "vitalysaraevcoherent/mvn-build-cache:app-two"
+    }
+  ]
+
 }
 
