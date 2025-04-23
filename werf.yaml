@@ -1,5 +1,7 @@
 project: demoapp
 configVersion: 1
+build:
+  cacheVersion: global-cache-version
 
 ---
 image: registry-1.docker.io/vitalysaraevcoherent/werf-demo-one
