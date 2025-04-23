@@ -1,13 +1,13 @@
 project: demoapp
 configVersion: 1
-staged: true
 
 ---
 image: vitalysaraevcoherent/werf-demo-one
 dockerfile: Dockerfile
 context: "werf-demo-one"
-
+staged: true
 ---
 image: vitalysaraevcoherent/werf-demo-two
 dockerfile: Dockerfile
 context: "werf-demo-two"
+staged: true
