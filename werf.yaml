@@ -5,9 +5,9 @@ configVersion: 1
 image: registry-1.docker.io/vitalysaraevcoherent/werf-demo-one
 dockerfile: Dockerfile
 context: "werf-demo-one"
-staged: true
+  # staged: true
 ---
 image: registry-1.docker.io/vitalysaraevcoherent/werf-demo-two
 dockerfile: Dockerfile
 context: "werf-demo-two"
-staged: true
+  # staged: true
