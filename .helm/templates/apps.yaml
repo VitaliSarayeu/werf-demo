@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: AppOne
+  annotations:
+    werf.io/weight: "200"
+    werf.io/deploy-dependency-vaultprovisioning: state=ready,kind=Job,name=waitforme
+spec:
+  selector:
+    matchLabels:
+      app: appone
+  template:
+    metadata:
+      labels:
+        app: appone
+    spec:
+      containers:
+      - image: {{ $.Values.imageTags.one }}
+        name: appone
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: AppTwo
+  annotations:
+    werf.io/weight: "200"
+    werf.io/deploy-dependency-vaultprovisioning: state=ready,kind=Job,name=waitforme
+spec:
+  selector:
+    matchLabels:
+      app: apptwo
+  template:
+    metadata:
+      labels:
+        app: apptwo
+    spec:
+      containers:
+      - image: {{ $.Values.imageTags.two }}
+        name: apptwo
+

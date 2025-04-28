@@ -2,3 +2,5 @@ imageTags:
   vault: "hashicorp/vault:1.19"
   # web: "nginxdemos/hello:0.3-plain-text"
   web: "nginxdemos/hello:0.4-plain-text"
+  one: "vitalysaraevcoherent/werf-demo-one:latest"
+  two: "vitalysaraevcoherent/werf-demo-two:latest"

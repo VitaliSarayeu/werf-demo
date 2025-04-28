@@ -12,7 +12,8 @@ target "one" {
   cache-to = [
     {
       type = "registry",
-      ref = "vitalysaraevcoherent/mvn-build-cache:app-one"
+      ref = "vitalysaraevcoherent/mvn-build-cache:app-one",
+      mode = "max"
     }
   ]
 
@@ -32,7 +33,8 @@ target "two" {
   cache-to = [
     {
       type = "registry",
-      ref = "vitalysaraevcoherent/mvn-build-cache:app-two"
+      ref = "vitalysaraevcoherent/mvn-build-cache:app-two",
+      mode = "max"
     }
   ]
 
